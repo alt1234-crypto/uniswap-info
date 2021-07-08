@@ -1,7 +1,7 @@
 {
   "name": "@aidiswap/info",
   "private": true,
-  "homepage": "https://aidiinu.finance/exchange",
+  "homepage": "https://aidi-info.herokuapp.com/",
   "devDependencies": {
     "@popperjs/core": "^2.4.2",
     "@reach/portal": "^0.10.3",
