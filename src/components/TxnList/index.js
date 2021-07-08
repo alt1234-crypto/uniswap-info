@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import dayjs from 'dayjs'
 import utc from 'dayjs/plugin/utc'
 
-import { formatTime, formattedNum, urls } from '../../utils'
+import { formatTime, formattedNum, urls, formatUnixTimeToLocal } from '../../utils'
 import { useMedia } from 'react-use'
 import { useCurrentCurrency } from '../../contexts/Application'
 import { RowFixed, RowBetween } from '../Row'
@@ -310,6 +310,7 @@ function TxnList({ transactions, symbol0Override, symbol1Override, color }) {
           </DataText>
         )}
         <DataText area="time">{formatTime(item.timestamp)}</DataText>
+        /*<DataText area="time">{formatUnixTimeToLocal(item.timestamp)}</DataText>*/
       </DashGrid>
     )
   }
