@@ -65,12 +65,12 @@ const theme = (darkMode, color) => ({
   shadow1: darkMode ? '#000' : '#2F80ED',
 
   // other
-  red1: '#FF6871',
-  green1: '#27AE60',
-  yellow1: '#FFE270',
-  yellow2: '#F3841E',
-  link: '#2172E5',
-  blue: '2f80ed',
+  red1: '#31E37D',
+  green1: '#31E37D',
+  yellow1: '#31E37D',
+  yellow2: '#31E37D',
+  link: '#31E37D',
+  blue: '#31E37D',
 
   background: darkMode ? 'black' : `radial-gradient(50% 50% at 50% 50%, #31E37D30 0%, #fff 0%)`,
 })

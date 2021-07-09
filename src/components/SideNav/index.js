@@ -14,26 +14,18 @@ import { useDarkModeManager } from '../../contexts/LocalStorage'
 import Toggle from '../Toggle'
 
 const Wrapper = styled.div`
-  height: ${({ isMobile }) => (isMobile ? 'initial' : '100vh')};
   background-color: ${({ theme }) => transparentize(0.4, theme.bg1)};
   color: ${({ theme }) => theme.text1};
-  padding: 0.5rem 0.5rem 0.5rem 0.75rem;
+
   position: sticky;
   top: 0px;
   z-index: 9999;
+    height: 0;
+    width :0;
   box-sizing: border-box;
   /* background-color: #1b1c22; */
   background: linear-gradient(193.68deg, #1b1c22 0.68%, #000000 100.48%);
   color: ${({ theme }) => theme.bg2};
-
-  @media screen and (max-width: 800px) {
-    grid-template-columns: 1fr;
-    position: relative;
-  }
-
-  @media screen and (max-width: 600px) {
-    padding: 1rem;
-  }
 `
 
 const Option = styled.div`
@@ -51,13 +43,16 @@ const DesktopWrapper = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 100vh;
+  height: 0;
+  width :0;
 `
 
 const MobileWrapper = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+    height: 0;
+    width :0;
 `
 
 const HeaderText = styled.div`

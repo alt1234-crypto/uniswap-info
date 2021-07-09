@@ -310,7 +310,6 @@ function TxnList({ transactions, symbol0Override, symbol1Override, color }) {
           </DataText>
         )}
         <DataText area="time">{formatTime(item.timestamp)}</DataText>
-        /*<DataText area="time">{formatUnixTimeToLocal(item.timestamp)}</DataText>*/
       </DashGrid>
     )
   }
